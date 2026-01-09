@@ -1,7 +1,7 @@
 * { margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter"; sans-serif;
+    font-family: "Inter";
     font-optical-sizing: auto;
 }
 
@@ -48,7 +48,7 @@ nav {
 
 .logo img{
     width: 139px;
-    height: 60;
+    height: 60px;
 }  
 
 nav .menu{ 
@@ -98,7 +98,6 @@ nav .menu a{
 
 .banner-content {
     max-width: 860px;
-    max-height: 379px;
     text-align: center;
     color: #ffffff;
     margin: 0 auto;
@@ -110,11 +109,9 @@ nav .menu a{
     padding: 12px 16px;
     border-radius: 1000px;
     margin-bottom: 16px;
-
     display: inline-flex;
     align-items: center;
     gap: 8px;
-
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.06em;
@@ -130,7 +127,7 @@ nav .menu a{
 .banner-header {
     font-size: 72px;
     font-weight:bold;
-    margin: 16px;}
+    margin-bottom: 16px;}
 
 .banner-text {
     max-width: 720px;
@@ -152,7 +149,7 @@ nav .menu a{
 }
 
 .hero-1 a,
-.hero-2 a 
+.hero-2 a, 
 .ea a{
     display: inline-flex;
     align-items: center;
@@ -277,7 +274,6 @@ nav .menu a{
 .sb-content h2 {
     font-size: 48px;
     font-weight:bold;
-    line-height: auto;
     margin-bottom: 16px;
     margin-top: 16px;
     color: #001931;
@@ -357,6 +353,7 @@ nav .menu a{
     justify-content: center;
     align-items: center;
     margin-bottom: 16px;
+    box-shadow: 0 10px 20px 0 #0000003e;
 }
 .btn.ea a {
     display: inline-flex;
@@ -368,4 +365,64 @@ nav .menu a{
     font-weight:400;
     color: #627382;
     line-height: 20px;
+}
+
+footer {
+    background-color: #001931;
+    color: #ffffff;
+}
+
+.footer-container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 120px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    width: 139px;
+    height: auto;
+    display: block;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 220px;
+}
+.social h4 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.social a {
+    display: inline-flex;
+    align-items: center;
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+}
+
+footer hr {
+    max-width: 1360px;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.copyright {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 24px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 }

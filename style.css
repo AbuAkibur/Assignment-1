@@ -1,10 +1,8 @@
 * { margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter";
-    font-optical-sizing: auto;
 }
-
+body,
 .font-inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;}
@@ -24,8 +22,32 @@
     color: #ffff;
 }
 
-.btn a{text-decoration: none;
+.btn a{
+    text-decoration: none;
     color: #ffff;
+}
+
+.btn:hover { 
+    font-size: 16px;
+    background-color: #ffffff;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #30B868;
+    border: 1px solid #30B868;
+}
+
+.btn:hover::after{
+    width: 100%;
+}
+
+.btn a:hover {
+    color: #30B868;
+    background-color: #ffffff;
+}
+.btn a:hover::after {
+    width: 100%;
 }
 
 .section-heading {
@@ -40,7 +62,6 @@ nav {
     background-color: #ffff;
     padding: 16px 120px;
     width: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,7 +75,6 @@ nav {
 nav .menu{ 
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
     gap: 32px;
 }
 
@@ -62,6 +82,14 @@ nav .menu a{
     font-size: 16px;
     color: black;
     text-decoration: none;
+}
+
+nav .menu a:hover {
+    color: #30B868;
+}
+
+nav .menu a:hover::after {
+    width: 100%;
 }
 
 .banner {
@@ -72,8 +100,7 @@ nav .menu a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 70px;
-    padding-bottom: 134px;
+    padding: 70px 0 134px;
 }
 
 .banner-image {
@@ -100,7 +127,6 @@ nav .menu a{
     max-width: 860px;
     text-align: center;
     color: #ffffff;
-    margin: 0 auto;
 }
 
 .banner-tag {
@@ -114,19 +140,17 @@ nav .menu a{
     gap: 8px;
     font-size: 16px;
     font-weight: 500;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
 .banner-tag img {
     width: 16px;
     height: 16px;
-    display: block;
 }
 
 .banner-header {
     font-size: 72px;
-    font-weight:bold;
+    font-weight:700;
     margin-bottom: 16px;}
 
 .banner-text {
@@ -198,6 +222,19 @@ nav .menu a{
     width: 322px;
     height: 300px;
     box-shadow: 0 0px 8px 0 #0000004c;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+}
+
+.notes-card:hover{
+    width: 322px;
+    height: 300px;
+    box-shadow: 0 0px 8px 0 #30B868;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -410,11 +447,18 @@ footer {
     height: 20px;
 }
 
+.social img:hover {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0px 8px 0 #30B868;
+}
+
 footer hr {
     max-width: 1360px;
     margin: 0 auto;
     border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid #fafafa36;
 }
 
 .copyright {

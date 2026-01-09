@@ -25,6 +25,11 @@
     color: #ffff;
 }
 
+.section-heading {
+    text-align: center;
+    margin: 0 auto;
+}
+
 
  /* main style */
 
@@ -154,4 +159,83 @@ nav .menu a{
 .hero-2 img{
     height: 20px;
     width: 20px;
+}
+
+#notes {
+    padding-top: 120px;
+}
+
+#notes .notes-container {
+    margin: 0 auto;
+    width: 70%;
+    max-width: 1360px;
+
+}
+
+.section-heading h2{
+    color: #001931;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+
+}
+
+.section-heading p{
+    color: #627382;
+    font-size: 16;
+    font-weight:400;
+    line-height: 20px;
+    margin-bottom: 44px;
+}
+
+#notes .notes-container .notes-box{
+    display:flex ;
+    gap: 24px;
+}
+
+.notes-box .notes-card{
+    width: 322px;
+    height: 300px;
+    box-shadow: 0 0px 8px 0 #0000004c;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16;
+    padding: 24px;
+}
+
+.notes-card .icon-circle{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #F95555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.icon-circle img{
+    height: 32px;
+    width: 32px;
+}
+
+.notes-card h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #001931;
+    margin-bottom: 16px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.notes-card p{
+    font-size: 16px ;
+    color: #627382;
+    line-height: 20px;
+    text-align: center;
+
 }
